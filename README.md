@@ -25,7 +25,7 @@ Setup:
 
 Functions:
 ----------
-t(s)      - Converts a timezone string (e.g. "+0900") into a local time
+t(s)      - Converts a timezone string (e.g. "-0500") into a local time
 c(mode)   - mode="1" returns UTC string; mode="2" triggers analog clock init
 b()       - Generates timestamp using input fields, or defaults to current time
 k()       - Renders and animates analog clock hands
@@ -36,7 +36,7 @@ j()       - Auto-init function for `#clock` and `#analog-clock`
 Examples:
 ---------
 • Get local time from timezone string  
-  t("+0900") → "21:42:00"
+  t("-0500") → "hh:mm:ss"
 
 • Generate timestamp label in YYMMDDHHMM format  
   b() → "2507272142"
